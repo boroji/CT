@@ -1,0 +1,176 @@
+/* 
+********************
+Table of Content:
+
+(1)- Color Palette
+(2)- Typography
+(3)- Universal Styling
+(4)- Type Properties
+(5)- Flexbox and Position
+(6)- SVG Style
+(7)- Wrapper
+(8)- Poster
+(9)- SVG Position
+(10)- SVG Properties
+(11)- Upper <div>
+(12)- More <p>
+(13)- Talent <p>
+(14)- Lower <div>
+(15)- Less <p>
+(16)- Ego <p>
+
+********************
+*/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  background-color: #ffffff;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.wrapper .poster {
+  width: 597px;
+  height: 800px;
+}
+
+.wrapper .poster .svg-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.wrapper .poster .svg-wrapper svg {
+  position: absolute;
+  z-index: 50;
+}
+
+.wrapper .poster .svg-wrapper svg .arrow-head {
+  stroke-width: 4px;
+  stroke: #D3AE56;
+  fill: none;
+}
+
+.wrapper .poster .svg-wrapper svg #top {
+  -webkit-transform: translateY(-60px);
+          transform: translateY(-60px);
+}
+
+.wrapper .poster .svg-wrapper svg #bottom {
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px);
+}
+
+.wrapper .poster .svg-wrapper svg #left {
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+}
+
+.wrapper .poster .svg-wrapper svg #right {
+  -webkit-transform: translateX(60px);
+          transform: translateX(60px);
+}
+
+.wrapper .poster .upper {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #E6614E;
+  position: relative;
+}
+
+.wrapper .poster .upper p {
+  text-transform: uppercase;
+  position: absolute;
+  color: #ffffff;
+}
+
+.wrapper .poster .upper p:first-child {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 85px;
+  bottom: 155px;
+}
+
+.wrapper .poster .upper p:last-child {
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+  font-size: 190px;
+  bottom: -56px;
+  z-index: 60;
+}
+
+.wrapper .poster .lower {
+  width: 100%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  position: relative;
+}
+
+.wrapper .poster .lower p {
+  text-transform: uppercase;
+  position: absolute;
+  color: #E6614E;
+}
+
+.wrapper .poster .lower p:first-child {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 160px;
+  top: -64px;
+}
+
+.wrapper .poster .lower p:last-child {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 85px;
+  top: 123px;
+  color: #D3AE56;
+}
+/*# sourceMappingURL=style.css.map */
